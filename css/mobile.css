@@ -84,17 +84,6 @@
         text-align: center;
     }
 
-    .content__image {
-        width: 100%;
-        height: auto;
-        margin-bottom: 36px;
-        position: relative;
-    }
-
-    .content__image img {
-        margin: 0 auto;
-    }
-
     .content-info {
         margin-top: 50px;
         position: relative;
@@ -115,6 +104,13 @@
         text-align: left;
         font-size: 11px;
         line-height: 40px;
+    }
+
+    .slider-images {
+        width: 40vh;
+        height: 30vh;
+        margin-bottom: 36px;
+        position: relative;
     }
 
     .slider-move {

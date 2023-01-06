@@ -33,7 +33,7 @@ let sliderCities = document.querySelector('.cities');
 let sliderAreas = document.querySelector('.areas');
 let sliderTimes = document.querySelector('.times');
 let sliderCosts = document.querySelector('.costs');
-let sliderBtns = document.querySelectorAll('.slider-btn');
+let sliderBtns = document.querySelectorAll('.completed-projects .slider-btn');
 let sliderDots = document.querySelector('.slider-dots');
 let sliderTitles = document.querySelector('.completed-projects__menu');
 
