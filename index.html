@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/adaptive.css">
+    <link rel="stylesheet" href="./css/mobile.css">
     <link rel="icon" type="image/svg+xml" href="./images/favicon.svg">
     <title>Design Studio site</title>
 </head>
@@ -70,14 +70,14 @@
         <section class="completed-projects">
             <div class="container">
                 <ul class="navi completed-projects__menu">
-                    <li class="navi-link completed-projects__menu-link">
-                        <a href="">ROSTOV-ON-DON ADMIRAL</a>
+                    <li class="navi-link completed-projects__menu-link pr0">
+                        ROSTOV-ON-DON ADMIRAL
                     </li>
-                    <li class="navi-link completed-projects__menu-link">
-                        <a href="">SOCHI THIEVES</a>
+                    <li class="navi-link completed-projects__menu-link pr1">
+                        SOCHI THIEVES
                     </li>
-                    <li class="navi-link completed-projects__menu-link">
-                        <a href="">ROSTOV-ON-DON PATRIOTIC</a>
+                    <li class="navi-link completed-projects__menu-link pr2">
+                        ROSTOV-ON-DON PATRIOTIC
                     </li>
                 </ul>
                 <div class="content">
@@ -88,37 +88,31 @@
                             market we have made happy more than 1000 families
                         </p>
                     </div>
-                    <div class="content__image">
-                        <div class="info-scrolling__mobile">
-                            <button class="info-btn back"></button>
-                            <button class="info-btn next"></button>
+                    <div class="slider">
+                        <div class="slider-images"></div>
+                        <div class="slider-move">
+                            <button class="slider-btn back"></button>
+                            <div class="slider-dots"></div>
+                            <button class="slider-btn next"></button>
                         </div>
-                        <img src="./images/image2.1.jpg" alt="project 1">
+                        <div class="slider-move__mobile">
+                            <button class="slider-btn back"></button>
+                            <button class="slider-btn next"></button>
+                        </div>
                     </div>
                     <div class="content-info">
-                        <div class="info-item">
+                        <div class="info-item cities">
                             <h3 class="subtitle">City:</h3>
-                            <span class="text info-item__text">Rostov-on-Don <br>LCD admiral</span>
                         </div>
-                        <div class="info-item">
+                        <div class="info-item areas">
                             <h3 class="subtitle">apartment area:</h3>
-                            <span class="text info-item__text">81 m2</span>
                         </div>
-                        <div class="info-item">
+                        <div class="info-item times">
                             <h3 class="subtitle">Repair time:</h3>
-                            <span class="text info-item__text">3.5 months</span>
                         </div>
-                        <div class="info-item">
+                        <div class="info-item costs">
                             <h3 class="subtitle">Repair Cost:</h3>
-                            <span class="text info-item__text">Upon request</span>
                         </div>
-                    </div>
-                    <div class="info-scrolling">
-                        <button class="info-btn back"></button>
-                        <img class="info-btn scroll" src="./images/dot.svg" alt="dot">
-                        <img class="info-btn scroll" src="./images/dot.svg" alt="dot">
-                        <img class="info-btn scroll" src="./images/dot.svg" alt="dot">
-                        <button class="info-btn next"></button>
                     </div>
                 </div>
             </div>
@@ -309,9 +303,9 @@
                         wildest fantasies
                     </h2>
                     <div class="image__mobile">
-                        <div class="info-scrolling__mobile">
-                            <button class="info-btn back"></button>
-                            <button class="info-btn next"></button>
+                        <div class="slider-move__mobile">
+                            <button class="slider-btn back"></button>
+                            <button class="slider-btn next"></button>
                         </div>
                         <img src="./images/image5.5.jpg" alt="completed project 1">
                     </div>
@@ -500,5 +494,6 @@
             </button>
         </div>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 </html>

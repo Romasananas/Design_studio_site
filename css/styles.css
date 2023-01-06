@@ -189,7 +189,8 @@
     justify-content: end;
 }
 
-.completed-projects__menu-link a {
+.completed-projects__menu-link {
+    margin-right: 45px;
     font-family: 'Yeseva One';
     font-style: normal;
     font-weight: 400;
@@ -199,7 +200,7 @@
     color: rgba(255, 255, 255, 0.3);
 }
 
-.completed-projects__menu-link a:hover {
+.completed-projects__menu-link.active {
     border-bottom: 1px solid #E3B873;
     padding-bottom: 6px;
     color: #E3B873;
@@ -246,53 +247,84 @@
 }
 
 .info-item__text {
-    max-width: 160px;
+    width: 160px;
+    height: 40px;
     font-size: 13px;
     line-height: 21px;
 }
 
-.content__image {
-    width: 50%;
+.info-item__text.active {
+    transition: 0.2s;
 }
 
-.content__image img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+.slider {
+    position: relative;
 }
 
-.info-scrolling__mobile {
+.slider-images {
+    width: 600px;
+    height: 480px;
+    position: relative;
+}
+
+.slider-images .image {
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 800ms ease;
+}
+
+.slider-images .image.active {
+    opacity: 1;
+  }
+
+.slider-move__mobile {
     display: none;
 }
 
-.info-scrolling {
-    width: 33%;
+.slider-move {
+    position: absolute;
+    left: -630px;
     display: flex;
 }
 
-.info-scrolling__mobile {
-
-}
-
-.info-btn {
-    margin-right: 20px;
+.slider-btn {
+    margin: 0 20px;
     width: 42px;
+    height: 20px;
+    background-color: #fff;
     border: none;
     cursor: pointer;
+    display: inline-block;
 }
 
-.info-btn.back {
+.slider-btn.back {
     background: url("../images/arrow-back.svg");
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.scroll {
+.slider-dot {
+    display: inline-block;
     width: 10px;
-    color: rgba(255, 255, 255, 0.3);
+    height: 10px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background 0.4s ease;
 }
 
-.info-btn.next {
+.slider-dot:hover, .slider-dot.active {
+    background: rgba(255, 255, 255, 0.3);
+  }
+
+.slider-btn.next {
     background: url("../images/arrow-next.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -547,7 +579,7 @@
 }
 
 .advantages__item span {
-    position: absolute;
+scrolling    position: absolute;
     top: 13px;
     left: 14px;
     font-family: 'Yeseva One';
