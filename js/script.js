@@ -105,6 +105,10 @@ function changeProps (num) {
 function initTitles() {
     let current = sliderTitles.querySelector(".completed-projects__menu-link");
     current.classList.add("active");
+    sliderTitles.querySelectorAll(".completed-projects__menu-link").forEach((title,index) => {
+        title.addEventListener("click", function() {
+            moveSlide(index);
+        })});
 }
 
 function moveSlide (num) {

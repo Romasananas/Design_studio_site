@@ -198,6 +198,7 @@
     line-height: 19px;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
 }
 
 .completed-projects__menu-link.active {
